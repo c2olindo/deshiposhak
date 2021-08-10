@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/chosen.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/lightbox.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/pe-icon-7-stroke.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.mCustomScrollbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('http://fonts.googleapis.com/css?family=Montserrat') }}">
+<link href="{{ asset('https://fonts.googleapis.com/css?family=Playfair+Display:400italic,400,700,700italic,900,900italic') }}" rel='stylesheet' type='text/css'>
+<link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:300,100,100italic,300italic,400,400italic,500,500italic,700,700italic,900,900italic') }}" rel='stylesheet' type='text/css'>
+<link href="{{ asset('https://fonts.googleapis.com/css?family=Oswald:400,300,700') }}" rel='stylesheet' type='text/css'>

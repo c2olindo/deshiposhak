@@ -1,0 +1,15 @@
+<script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/chosen.jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/Modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-ui.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/lightbox.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/masonry.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/functions.js') }}"></script>
