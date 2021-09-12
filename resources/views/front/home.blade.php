@@ -4,7 +4,6 @@
 @section('class', 'home')
 
 @section('body')
-
     {{--<div class="home-slide3 owl-carousel nav-style3 nav-center-center" data-animateout="fadeOut" data-animatein="fadeIn" data-items="1" data-nav="true" data-dots="false" data-loop="true" data-autoplay="true">
         @foreach($banner as $item)
             <img src="{{ asset('uploads/banners/').'/'.$item['image'] }}" alt="">
@@ -53,14 +52,15 @@
                     <div class="tab-container">
                         <div id="tab-1" class="tab-panel active">
                             <ul class="tab-list owl-carousel nav-style7 nav-center-center" data-nav="true" data-autoplay="false" data-dots="false" data-loop="true" data-margin="30" data-responsive='{"0":{"items":1},"600":{"items":2},"1000":{"items":4}}'>
+                                @foreach($product as $item)
                                 <li class="product-item">
                                     <div class="product-inner">
                                         <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/1.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/2.jpg') }}" alt=""></a>
+                                            <a href=""{{ route('product', $item['slug']) }}"><img src="{{ asset('uploads/products/'.$item['image']) }}" alt=""></a>
+                                            <a class="back-image" href=""{{ route('product', $item['slug']) }}"><img src="{{ asset('uploads/products/'.$item['image']) }}" alt=""></a>
                                         </div>
                                         <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
+                                            <h3 class="product-name"><a href="{{ route('product', $item['slug']) }}">{{ $item['product_name'] }}</a></h3>
                                             <span class="price">
 											<ins>$85.00</ins>
 											<del>$95.00</del>
@@ -69,129 +69,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/2.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/3.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/3.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/4.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/4.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/5.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tab-2" class="tab-panel">
-                            <ul class="tab-list owl-carousel nav-style7 nav-center-center" data-nav="true" data-autoplay="false" data-dots="false" data-loop="true" data-margin="30" data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":4}}'>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/5.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/6.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/6.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/7.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/7.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/8.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="product-item">
-                                    <div class="product-inner">
-                                        <div class="product-thumb has-back-image">
-                                            <a href="index3.html#"><img src="{{ asset('images/products/8.jpg') }}" alt=""></a>
-                                            <a class="back-image" href="index3.html#"><img src="{{ asset('images/products/9.jpg') }}" alt=""></a>
-
-                                        </div>
-                                        <div class="product-info">
-                                            <h3 class="product-name"><a href="index3.html#">London Star Sweatshirt</a></h3>
-                                            <span class="price">
-											<ins>$85.00</ins>
-											<del>$95.00</del>
-										</span>
-                                            <a href="index3.html#" class="button">BOOK APPOINTMENT</a>
-                                        </div>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

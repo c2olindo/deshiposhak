@@ -27,7 +27,9 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'User'], function () {
     Route::get('/', 'PagesController@index')->name('home');
     Route::get('/about-us', 'PagesController@about')->name('about-us');
-    Route::get('/contact-us', 'PagesController@contact')->name('contact');
+
+    Route::get('/contact-us', 'ContactController@index')->name('contact');
+    Route::post('/contact-us', 'ContactController@storeForm')->name('contact.save');
 
     Route::group(['prefix' => 'our-products'], function () {
         Route::get('/', 'ProductController@index')->name('shop');
